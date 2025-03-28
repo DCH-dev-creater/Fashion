@@ -1,0 +1,76 @@
+:root {
+    --bg-circle-1: #5C3C35;
+    --bg-circle-2: #6E171D;
+    --bg-circle-3: #48322A;
+    --color-card-2: #6E171D;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 595px;
+    height: 842px;
+    margin: 100px auto;
+    background-color: #fff;
+
+}
+
+header {
+    display: grid;
+    height: 110px;
+    width: 100%;
+    grid-template-columns: 192px 126px 72px;
+    justify-content: end;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: var(--bg-circle-2);
+    border-radius: 50%;
+    position: relative;
+    margin: 44px auto;
+}
+
+.circle::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bg-circle-2);
+    position: absolute;
+    top: -18px;
+}
+  
+.circle::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bg-circle-2);
+    position: absolute;
+    bottom: -18px;
+}
+
+.procent {
+    font-size: 66px;
+    color: var(--color-card-2);
+    font-weight: 900;
+    display: grid;
+    align-items: center;
+}
+
+.text-discount {
+    font-size: 12px;
+    display: grid;
+    color: var(--color-card-2);
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
