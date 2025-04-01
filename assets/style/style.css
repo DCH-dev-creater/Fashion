@@ -17,11 +17,10 @@ body {
 }
 
 section {
-    display: flex;
-    gap: 25px;
-    height: 100vh;
+    display: grid;
+    gap: 40px;
     justify-content: center;
-    align-items: center;
+    margin: 65px 0;
 }
 
 .card {
