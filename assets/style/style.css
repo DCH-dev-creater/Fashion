@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e2e2e2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +24,6 @@ section {
 }
 
 .card {
-    min-width: 560px;
     width: 595px;
     height: 842px;
     background-color: #fff;
