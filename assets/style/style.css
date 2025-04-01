@@ -40,6 +40,7 @@ header {
     width: 100%;
     grid-template-columns: 194px 126px 72px;
     justify-content: end;
+    align-items: center;
 }
 
 .color-text-1 {
@@ -59,7 +60,7 @@ header {
     height: 12px;
     border-radius: 50%;
     position: relative;
-    margin: 44px auto;
+    margin: 0 auto;
 }
 
 .circle-color-1 {
