@@ -18,14 +18,17 @@ body {
     height: 842px;
     margin: 100px auto;
     background-color: #fff;
-
+    display: grid;
+    align-content: space-between;
+    position: relative;
+    grid-template-rows: 110px 657px 75px;
 }
 
 header {
     display: grid;
     height: 110px;
     width: 100%;
-    grid-template-columns: 192px 126px 72px;
+    grid-template-columns: 194px 126px 72px;
     justify-content: end;
 }
 
@@ -66,11 +69,93 @@ header {
     align-items: center;
 }
 
-.text-discount {
+.text-header-footer {
     font-size: 12px;
     display: grid;
     color: var(--color-card-2);
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 7px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    align-content: center;
+    z-index: 5;
+}
+
+.ract-gray {
+    width: 478px;
+    height: 654px;
+    background-color: #E4E4E6;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+main {
+    z-index: 3;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.block-lines {
+    display: grid;
+    gap: 15px;
+    top: 288px;
+    position: absolute;
+    width: 100%;
+}
+
+.line {
+    height: 40px;
+    background-color: var(--color-card-2);
+}
+
+.block-img {
+    width: 448px;
+    height: 657px;
+    background-image: url(../img/card_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+    display: grid;
+    grid-template-rows: 72px 44px 1fr;
+    align-items: end;
+    padding-left: 33px;
+}
+
+img {
+    width: 283px;
+    height: 38px;
+}
+
+.fashion {
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.block-text {
+    margin-bottom: 45px;
+    font-size: 12px;
+}
+
+.vert {
+    display: block;
+    writing-mode: sideways-lr;
+    position: absolute;
+    height: 410px;
+    right: 22px;
+    bottom: 34px;
+    opacity: 0.5;
 }
