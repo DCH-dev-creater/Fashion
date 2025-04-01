@@ -1,8 +1,11 @@
 :root {
-    --bg-circle-1: #5C3C35;
-    --bg-circle-2: #6E171D;
-    --bg-circle-3: #48322A;
+    --color-card-1: #5C3C35;
     --color-card-2: #6E171D;
+    --color-card-3: #48322A;
+
+    --img-1: url(../img/card_1.png);
+    --img-2: url(../img/card_2.png);
+    --img-3: url(../img/card_3.png);
 }
 
 body {
@@ -13,15 +16,23 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    display: flex;
+    gap: 25px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
+    min-width: 560px;
     width: 595px;
     height: 842px;
-    margin: 100px auto;
     background-color: #fff;
     display: grid;
-    align-content: space-between;
     position: relative;
     grid-template-rows: 110px 657px 75px;
+    box-shadow: 0px 8px 10px #b4b4b4;
 }
 
 header {
@@ -32,13 +43,36 @@ header {
     justify-content: end;
 }
 
+.color-text-1 {
+    color: var(--color-card-1);
+}
+
+.color-text-2 {
+    color: var(--color-card-2);
+}
+
+.color-text-3 {
+    color: var(--color-card-3);
+}
+
 .circle {
     width: 12px;
     height: 12px;
-    background-color: var(--bg-circle-2);
     border-radius: 50%;
     position: relative;
     margin: 44px auto;
+}
+
+.circle-color-1 {
+    background-color: var(--color-card-1);
+}
+
+.circle-color-2 {
+    background-color: var(--color-card-2);
+}
+
+.circle-color-3 {
+    background-color: var(--color-card-3);
 }
 
 .circle::before {
@@ -46,7 +80,7 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--bg-circle-2);
+    background-color: inherit;
     position: absolute;
     top: -18px;
 }
@@ -56,14 +90,13 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--bg-circle-2);
+    background-color: inherit;
     position: absolute;
     bottom: -18px;
 }
 
 .procent {
     font-size: 66px;
-    color: var(--color-card-2);
     font-weight: 900;
     display: grid;
     align-items: center;
@@ -72,10 +105,9 @@ header {
 .text-header-footer {
     font-size: 12px;
     display: grid;
-    color: var(--color-card-2);
     align-items: center;
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 }
 
 footer {
@@ -114,15 +146,24 @@ main {
     width: 100%;
 }
 
-.line {
+.line-1 {
+    height: 40px;
+    background-color: var(--color-card-1);
+}
+
+.line-2 {
     height: 40px;
     background-color: var(--color-card-2);
+}
+
+.line-3 {
+    height: 40px;
+    background-color: var(--color-card-3);
 }
 
 .block-img {
     width: 448px;
     height: 657px;
-    background-image: url(../img/card_2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,6 +173,18 @@ main {
     grid-template-rows: 72px 44px 1fr;
     align-items: end;
     padding-left: 33px;
+}
+
+.img1 {
+    background-image: var(--img-1);
+}
+
+.img2 {
+    background-image: var(--img-2);
+}
+
+.img3 {
+    background-image: var(--img-3);
 }
 
 img {
@@ -158,4 +211,8 @@ img {
     right: 22px;
     bottom: 34px;
     opacity: 0.5;
+}
+
+.mrg-left {
+    margin-left: 83px;
 }
